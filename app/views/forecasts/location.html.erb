@@ -1,0 +1,12 @@
+<h1>The Weather for <%= params[:address].gsub('+', ' ')  %> </h1>
+
+
+<!-- Ultimately, we want the following line to work when uncommented: -->
+
+<p>
+The current temperature at <%= @the_latitude %>, <%= @the_longitude %> is <%= @the_temperature %> degrees.
+The outlook for the next hour is: <%= @the_hour_outlook %>
+The outlook for the next day is: <%= @the_day_outlook %>
+
+</p>
+
